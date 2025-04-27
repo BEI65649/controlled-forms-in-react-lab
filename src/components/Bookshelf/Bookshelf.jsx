@@ -26,8 +26,7 @@ const Bookshelf = () => {
 // Construct a new version of the newBook object that includes the updated fields. Make sure you maintain the values of other fields in newBook that aren’t currently being updated. (Hint: Use the spread operator ... to create a new copy of the newBook object)
 // Use the setNewBook setter function to update the state of newBook with this new object to reflect the changes in your UI.
      const  handleInputChange = (event) => {
-       const { name, value } = event.target;
-       setNewBook({...newBook,[name]: value })
+       setNewBook({...newBook,[event.target.name]: event.target.value });
      };
 
      
